@@ -5,12 +5,16 @@
 // Section     : WEB322 NAA
 
 const express = require('express');
+const path = require('path');   // ★ 新增：Vercel 必要
 const projectData = require('./modules/projects');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+app.set('views', path.join(__dirname, 'views'));
+
 app.set('view engine', 'ejs');
-app.use(express.static('public'));
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
   res.render('home');
@@ -65,7 +69,7 @@ app.use((req, res) => {
 projectData.initialize()
   .then(() => {
     app.listen(PORT, () => {
-      console.log(`Server listening on http://localhost:${PORT}`);
+      console.log(`Server listening on port ${PORT}`);
     });
   })
   .catch(err => {
