@@ -3,9 +3,10 @@
 // Student ID  : 105889240
 // Date        : 12-06-2025
 // Section     : WEB322 NAA
+//Published URL: https://web322-assignment2-puce.vercel.app
 
 const express = require('express');
-const path = require('path');   // ★ 新增：Vercel 必要
+const path = require('path');  
 const projectData = require('./modules/projects');
 const app = express();
 const PORT = process.env.PORT || 8080;
