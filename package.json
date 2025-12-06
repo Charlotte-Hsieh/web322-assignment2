@@ -1,0 +1,23 @@
+{
+  "name": "web322-asgn2-yi-lien-hsieh",
+  "version": "1.0.0",
+  "description": "WEB322 Assignment 2 - YI-LIEN HSIEH (105889240)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "tw:build": "tailwindcss -i ./public/css/tailwind.css -o ./public/css/main.css"
+  },
+  "author": "YI-LIEN HSIEH",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "ejs": "^3.1.9"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "optionalDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "daisyui": "^4.12.0"
+  }
+}
