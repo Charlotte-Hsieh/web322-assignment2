@@ -1,34 +1,18 @@
-<div class="navbar bg-base-100">
+<nav class="navbar bg-base-200 px-6 shadow-md mb-6">
+  <!-- Left (Logo) -->
   <div class="navbar-start">
-    <div class="dropdown">
-      <label tabindex="0" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-        </svg>
-      </label>
-      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a href="/about">About</a></li>
-        <li>
-          <a>Sector</a>
-          <ul class="p-2">
-            <li><a href="/solutions/projects?sector=Land Sinks">Land Sinks</a></li>
-            <li><a href="/solutions/projects?sector=Industry">Industry</a></li>
-            <li><a href="/solutions/projects?sector=Transportation">Transportation</a></li>
-            <li><a href="/solutions/projects?sector=Electricity">Electricity</a></li>
-            <li><a href="/solutions/projects?sector=Food, Agriculture, and Land Use">Food, Agriculture, and Land Use</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <a href="/" class="btn btn-ghost text-xl">Climate Solutions</a>
+    <a href="/" class="text-xl font-bold">Climate Solutions</a>
   </div>
+
+  <!-- Center (Menu on large screens) -->
   <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
+    <ul class="menu menu-horizontal px-1 text-lg">
       <li><a href="/about">About</a></li>
+
       <li>
         <details>
           <summary>Sector</summary>
-          <ul class="p-2">
+          <ul class="p-2 bg-base-200">
             <li><a href="/solutions/projects?sector=Land Sinks">Land Sinks</a></li>
             <li><a href="/solutions/projects?sector=Industry">Industry</a></li>
             <li><a href="/solutions/projects?sector=Transportation">Transportation</a></li>
@@ -39,6 +23,27 @@
       </li>
     </ul>
   </div>
-  <div class="navbar-end">
+
+  <!-- Mobile Menu -->
+  <div class="navbar-end lg:hidden">
+    <details class="dropdown dropdown-end">
+      <summary class="btn btn-ghost">Menu</summary>
+      <ul class="menu dropdown-content bg-base-200 p-2 shadow rounded-box w-52">
+        <li><a href="/about">About</a></li>
+
+        <li>
+          <details>
+            <summary>Sector</summary>
+            <ul>
+              <li><a href="/solutions/projects?sector=Land Sinks">Land Sinks</a></li>
+              <li><a href="/solutions/projects?sector=Industry">Industry</a></li>
+              <li><a href="/solutions/projects?sector=Transportation">Transportation</a></li>
+              <li><a href="/solutions/projects?sector=Electricity">Electricity</a></li>
+              <li><a href="/solutions/projects?sector=Food, Agriculture, and Land Use">Food, Agriculture, and Land Use</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </details>
   </div>
-</div>
+</nav>
