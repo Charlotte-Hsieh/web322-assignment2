@@ -1,7 +1,7 @@
 // WEB322 – Assignment 2
 // Student Name: YI-LIEN HSIEH
 // Student ID  : 105889240
-// Date        : 12-06-2025
+// Date        : 10-31-2025
 // Section     : WEB322 NAA
 
 const projectData = require("../data/projectData.json");
